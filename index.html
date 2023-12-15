@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nb">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Målenhet konverter</title>
+
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<header></header>
+
+		<main>
+			<!-- 
+         Målenhet konverterer:
+         1. Målenheter: cm m km
+         2. Input som tar i mot et tall
+         3. Valg mulighet som velger målenhet
+         4. Noe matte som regner ut korrekt målenhet
+         5. En knapp som aktiverer funksjonaliteten
+         6. Noe som viser resultatet av konverteringen
+       -->
+
+			<form>
+				<div>
+					<label for="unitInput">
+						Skriv inn et nummer
+						<input type="number" name="unitInput" id="unitInput" />
+					</label>
+				</div>
+				<div>
+					<label for="unitFrom">
+						Verdi fra
+						<select name="unitFrom" id="unitFrom">
+							<option value="cm">CM</option>
+							<option value="m">M</option>
+							<option value="km">KM</option>
+						</select>
+					</label>
+
+					<label for="unitTo">
+						Verdi til
+						<select name="unitTo" id="unitTo">
+							<option value="cm">CM</option>
+							<option value="m">M</option>
+							<option value="km">KM</option>
+						</select>
+					</label>
+				</div>
+			</form>
+
+			<button id="unitButton">Konverter</button>
+			<h3 id="unitDisplay"></h3>
+		</main>
+
+		<footer></footer>
+	</body>
+</html>
